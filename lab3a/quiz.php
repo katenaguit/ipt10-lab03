@@ -27,6 +27,14 @@ $correct_answers = $data['answers'];
     <meta charset="utf-8">
     <title>IPT10 Laboratory Activity #3A</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <script>
+        // Function to automatically submit the form after 60 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('form').submit();
+            }, 60000); // 60000 milliseconds = 60 seconds
+        };
+    </script>
 </head>
 <body>
 <section class="section">
